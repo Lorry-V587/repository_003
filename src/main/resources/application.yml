@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: holidayrequest
+  datasource:
+    url: jdbc:mysql://localhost:3306/holidayrequest?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #com.mysql.jdbc.Driver  老版本的驱动路径
+
+server:
+  port: 8258
+
+mybatis-plus: #mybatis
+  mapper-locations: classpath:com/atguigu/srb/core/mapper/xml/*.xml
+  configuration:
+    #mybatis 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+
+
+
+
+
+
+
